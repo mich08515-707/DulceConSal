@@ -27,11 +27,6 @@ font-family:'Fredoka', sans-serif;
 scroll-behavior:smooth;
 }
 
-img{
-max-width:100%;
-height:auto;
-}
-
 body{
 
 background:
@@ -61,17 +56,26 @@ z-index:-1;
 
 /* DER */
 
-/* HEADER */
+header{
+
+width:100%;
+padding:10px 4%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+position:fixed;
+top:0;
+z-index:1000;
 
 header{
 width:100%;
 padding:10px 4%;
 display:flex;
-justify-content:space-between;
 align-items:center;
 position:fixed;
 top:0;
-left:0;
 z-index:1000;
 }
 
@@ -91,6 +95,7 @@ gap:35px;
 box-shadow:
 0 10px 25px rgba(255,105,180,.2);
 }
+}
 
 /* LOGO */
 
@@ -101,10 +106,11 @@ align-items:center;
 gap:15px;
 flex-shrink:0;
 }
+
 .logo img{
 
-width:170px;
-height:170px;
+width:230px;
+height:230px;
 
 border-radius:50%;
 object-fit:cover;
@@ -115,6 +121,7 @@ padding:5px;
 box-shadow:
 0 10px 25px rgba(255,105,180,.3);
 }
+
 /* NAVBAR */
 
 nav{
@@ -557,103 +564,9 @@ object-fit:cover;
 object-position:center 100%;
 }
 
-/* ========================= */
-/* CELULARES */
-/* ========================= */
-
-@media (max-width: 768px){
-
-header{
-flex-direction:column;
-gap:15px;
-padding:15px;
-position:relative;
-}
-
-.logo img{
-width:140px;
-height:140px;
-}
-
-nav{
-position:relative;
-left:auto;
-transform:none;
-
-width:95%;
-max-width:500px;
-
-flex-wrap:wrap;
-justify-content:center;
-
-gap:15px;
-padding:15px;
-}
-
-nav a{
-font-size:.95rem;
-}
-
-.hero{
-grid-template-columns:1fr;
-padding:40px 20px;
-text-align:center;
-}
-
-.hero-text h1{
-font-size:3.5rem;
-margin-top:20px;
-}
-
-.hero-text span{
-font-size:2.5rem;
-}
-
-.hero-text p{
-font-size:1.1rem;
-}
-
-.hero-image img{
-max-width:100%;
-}
-
-.social{
-right:10px;
-gap:10px;
-}
-
-.social a{
-width:60px;
-height:60px;
-font-size:1.8rem;
-}
-
-.titulo{
-font-size:2.5rem;
-}
-
-.cards{
-grid-template-columns:1fr;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
-}
-}
-
 </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RHTW6DXCE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7RHTW6DXCE');
-</script>
-
-     </head>
+</head>
 
 <body>
 
@@ -664,7 +577,7 @@ grid-template-columns:1fr;
 <div class="logo">
 
 <!-- TU LOGO -->
-<img src="logo.png" alt="Logo">
+<img src="logoDulceConSal.jpeg" alt="Logo">
 
 </div>
 
@@ -700,22 +613,20 @@ Contacto
 <div class="social">
 
 <a class="whatsapp"
-href="https://wa.me/522285014952?text=Hola,%20me%20gustaría%20hacer%20un%20pedido"
-onclick="gtag('event','click_whatsapp');"
+href="https://wa.me/528130568660?text=Hola,%20me%20gustaría%20hacer%20un%20pedido"
 target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<a href="https://www.instagram.com/dulce_con_sal?igsh=NHp1emR5MXl4eWVx"
-onclick="gtag('event','click_instagram');"
-target="_blank">
+<a href="https://www.instagram.com/dulce_con_sal?igsh=NHp1emR5MXl4eWVx" target="_blank" class="social-btn instagram">
 <i class="fab fa-instagram"></i>
 </a>
 
-<a href="https://www.facebook.com/share/1Bj7DPk6Jy/" onclick="gtag('event','click_facebook');" target="_blank" class="social-btn facebook">
+<a href="https://www.facebook.com/share/1Bj7DPk6Jy/" target="_blank" class="social-btn facebook">
 <i class="fab fa-facebook-f"></i>
 </a>
 
-<a href="https://www.tiktok.com/@dulce.con.sal?_r=1&_t=ZS-97EX301CfZ7" onclick="gtag('event','click_tiktok');" target="_blank" class="social-btn tiktok">
+<a href="https://www.tiktok.com/@dulce.con.sal?_r=1&_t=ZS-97EX301CfZ7" target="_blank" class="social-btn tiktok">
 <i class="fab fa-tiktok"></i>
 </a>
 
@@ -811,7 +722,7 @@ Nosotros 💖
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=1200&q=80">
+<img src="porta3.jpeg">
 
 <div class="card-content">
 
@@ -821,8 +732,8 @@ Nosotros 💖
 
 Somos un negocio dedicado a crear
 antojitos dulces y salados preparados
-con ingredientes frescos, mucho amor
-y una presentación bonita y divertida.
+con ingredientes frescos con mucho amor 
+desde el 07 de julio de 2025.
 
 </p>
 
@@ -832,7 +743,7 @@ y una presentación bonita y divertida.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80">
+<img src="porta1.png">
 
 <div class="card-content">
 
@@ -842,8 +753,7 @@ y una presentación bonita y divertida.
 
 Queremos brindar una experiencia
 deliciosa y especial para cada cliente,
-ofreciendo productos de calidad
-en un ambiente moderno y acogedor.
+ofreciendo productos de calidad.
 
 </p>
 
@@ -853,7 +763,7 @@ en un ambiente moderno y acogedor.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80">
+<img src="porta4.png">
 
 <div class="card-content">
 
@@ -861,7 +771,7 @@ en un ambiente moderno y acogedor.
 
 <p>
 
-Cada frappe, waffle, crepa o esquite
+Cada waffle, crepa o esquite
 es preparado cuidadosamente para
 que disfrutes sabores únicos y una
 experiencia inolvidable.
@@ -904,7 +814,7 @@ Fresas con crema deliciosas.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80">
+<img src="bebi.png">
 
 <div class="card-content">
 
@@ -920,7 +830,7 @@ Bebidas frías y cremosas.
 
 <div class="card">
 
-<img src="https://i.redd.it/d7g1s0y2wzhc1.jpeg">
+<img src="maru.png">
 
 <div class="card-content">
 
@@ -936,7 +846,7 @@ Preparados deliciosos y calientes.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=900&q=80">
+<img src="tppi.png">
 
 <div class="card-content">
 
@@ -1205,7 +1115,7 @@ Contáctanos 💌
 
 <i class="fa-solid fa-location-dot"></i>
 
-Xalapa, Veracruz
+Col. Progreso, Calle Mazatlán con esquina Tijuana, Xalapa, Veracruz
 
 </div>
 
@@ -1213,24 +1123,17 @@ Xalapa, Veracruz
 
 <i class="fa-solid fa-phone"></i>
 
-228 5014952
++52 81 3056 8660
 
 </div>
 
-<div class="contact-card">
-
-<i class="fa-solid fa-envelope"></i>
-
-dulceconsal@gmail.com
-
-</div>
 
 <div class="contact-card">
 
 <i class="fa-regular fa-clock"></i>
 
 Lunes a Domingo
-4 PM - 11 PM
+5 PM - 11 PM
 
 </div>
 
